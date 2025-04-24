@@ -1,0 +1,6 @@
+{
+  "name": "turborepo-apps",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "turborepo-apps",
+  "workspaceFolder": "/usr/src/app"
+}

@@ -10,9 +10,10 @@ services:
         source: .
         target: /usr/src/app
     ports:
-      - "3000:${APP_A_PORT}"
-      - "3001:${APP_B_PORT}"
-    env_file:
-      - .env
+      - "3000:3000"
+      - "3001:3001"
+      - "3002:3002"
+    environment:
+      - WATCHPACK_POLLING=true
     command: sleep infinity
     # command: /bin/sh -c "pnpm install && pnpm turbo dev"
